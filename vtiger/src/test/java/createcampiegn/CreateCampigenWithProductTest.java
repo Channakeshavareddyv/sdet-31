@@ -6,6 +6,17 @@ public class CreateCampigenWithProductTest{
 	@Test(groups="regressionTest")
 	public void createCampigenWithProductTest() {
 		System.out.println("create Campigen With Product");
+		
+		System.out.println("create Campigen With Prod1");
+		
+		
+		
+		
+		
+		
+		
+		
+
 	}
 
 }
