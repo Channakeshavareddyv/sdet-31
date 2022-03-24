@@ -16,6 +16,7 @@ public class CreateCampigenTest {
 		
 		
 		System.out.println("======================");
+		System.out.println("=========Done=============");
 	}
 
 }
