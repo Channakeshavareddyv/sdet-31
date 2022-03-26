@@ -12,6 +12,9 @@ public class CreateOrganizationWithIndustryTest {
 		System.out.println("Delete the Organization");
 		System.out.println("Delete");
 		System.out.println("Delete the Organization");
+		System.out.println("Delete");
+		System.out.println("Delete the Organization");
+	}
 	}
 
 }
