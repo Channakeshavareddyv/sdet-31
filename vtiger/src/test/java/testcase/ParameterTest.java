@@ -22,30 +22,26 @@ public class ParameterTest {
 		System.out.println(System.getProperty("password"));
 		String Password=System.getProperty("password");
 		
-		WebDriver driver=null;
-		
-		if(Browser.equalsIgnoreCase("chrome")) {
-			driver= new ChromeDriver();
-		}else if(Browser.equalsIgnoreCase("firefox")){
-			driver=new FirefoxDriver();
-		}else if(Browser.equalsIgnoreCase("opera")){
-			driver=new OperaDriver();
-		}
-		else {
-			System.out.println("support only two browser");
-		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get(Url);
-		
-		driver.findElement(By.name("user_name")).sendKeys(UserName);
-		driver.findElement(By.name("user_password")).sendKeys(Password);
-		driver.findElement(By.id("submitButton")).click();
-		
-		Actions ac= new Actions(driver);
-		ac.moveToElement(driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"))).perform();
-		driver.findElement(By.linkText("Sign Out")).click();
-		driver.quit();
+		/*
+		 * WebDriver driver=null;
+		 * 
+		 * if(Browser.equalsIgnoreCase("chrome")) { driver= new ChromeDriver(); }else
+		 * if(Browser.equalsIgnoreCase("firefox")){ driver=new FirefoxDriver(); }else
+		 * if(Browser.equalsIgnoreCase("opera")){ driver=new OperaDriver(); } else {
+		 * System.out.println("support only two browser"); }
+		 * driver.manage().window().maximize();
+		 * driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		 * driver.get(Url);
+		 * 
+		 * driver.findElement(By.name("user_name")).sendKeys(UserName);
+		 * driver.findElement(By.name("user_password")).sendKeys(Password);
+		 * driver.findElement(By.id("submitButton")).click();
+		 * 
+		 * Actions ac= new Actions(driver);
+		 * ac.moveToElement(driver.findElement(By.xpath(
+		 * "//img[@src='themes/softed/images/user.PNG']"))).perform();
+		 * driver.findElement(By.linkText("Sign Out")).click(); driver.quit();
+		 */
 	}
 
 }
